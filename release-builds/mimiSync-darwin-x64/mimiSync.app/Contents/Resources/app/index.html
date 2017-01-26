@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>mimiSync</title>
+  <link href="https://cdn.jsdelivr.net/material-design-lite/1.2.1/material.min.css" rel="stylesheet" />
+  <link href="https://cdn.rawgit.com/Mimieam/muscle-css/master/dist/muscle.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura|Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link rel="stylesheet" href="./app/waves.css">-->
+  <link rel="stylesheet" href="./app/main.css">
+  <!-- cdnMe:css -->
+  <!-- endcdnMe -->
+</head>
+
+<body>
+  <!-- cdnMe:js -->
+  <!-- endcdnMe -->
+  <div class="flex-container column">
+    <h1 class="flex-item mSy-title">mimiSync</h1>
+    <div class="flex-item row">
+      <div class="flex-item left ">
+        <input type="file" name="file" id="location1" class="inputfile" />
+        <label for="file">Select src </label>
+      </div>
+      <div class="flex-item sync-icon">
+        <i class="material-icons">close</i>
+      </div>
+      <div class="flex-item right">
+        <input type="file" name="file" id="location2" class="inputfile" />
+        <label for="file">Select dest </label>
+      </div>
+      <div class="flex-item right">
+        <!--<i class="material-icons">close</i>-->
+      <!--<span class="mdl-badge" data-badge="4000000">x</span>-->
+      <div class="flex-item">
+        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+          <input type="checkbox" id="switch-2" class="mdl-switch__input">
+          <span class="mdl-switch__label"></span>
+        </label>
+      </div>
+      </div>
+    </div>
+
+    <hr/>
+<!--
+    <div class="flex-item row">
+      <div class="flex-item left folder-Input mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="srcFolder" readonly>
+        <label class="mdl-textfield__label" for="srcFolder">Src</label>
+      </div>
+      <div class="flex-item sync-icon bottom grow-1x">
+        <i class="material-icons">keyboard_tab</i>
+      </div>
+      <div class="flex-item right">
+        <div class="flex-item folder-Input mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="destFolder" readonly>
+          <label class="mdl-textfield__label" for="srcFolder">Dest</label>
+        </div>
+      </div>
+      <div class="flex-item right">
+        <i class="material-icons">check</i>
+      </div>
+    </div>-->
+
+  </div>
+  </div>
+  <!--<br>
+  <button type="button" id="start">Select folder to watch</button>
+  <button type="button" id="stop" style="display:none;">Stop watching</button>
+  <br>
+  <button type="button" onclick="resetLog();">Reset log</button>-->
+  <span class="messageLogger"></span>
+  <ul class="log-container">
+  </ul>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/material-design-lite/1.2.1/material.min.js"></script>
+<script>
+  // You can also require other files to run in this process
+  require('./app/main.js')
+  require('./renderer.js')
+</script>
+
+</html>

@@ -1,0 +1,106 @@
+html, body{
+    background:#1d1f21;
+    color: #c9cacc;
+    font-family: 'Jura', sans-serif;
+    margin:0 auto;
+
+}
+
+body{
+    width: 80%;
+}
+
+.sync-icon {
+    color: #2bbc8a;
+
+}
+.flex-container hr {
+    border: 1px dotted #ccc;
+}
+.mSy-title{
+    color: #2bbc8a;
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    /*max-width: 80%;*/
+    font-size: 1.25rem;
+    /*font-weight: 700;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    /*padding: 0.625rem 1.25rem;*/
+}
+
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted tomato;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+
+.folder-Input .mdl-textfield__input {
+    box-sizing: border-box;
+    color: tomato;
+    
+border-bottom: 1px solid rgba(255,99,71,.42);
+    width: calc(100% - 32px);
+}
+
+.folder-Input .mdl-textfield__label {
+    color: tomato;
+
+}
+
+.folder-Input .mdl-textfield__label:after {
+    background-color: #2bbc8a;
+    bottom: 20px;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    visibility: hidden;
+    width: 10px;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label{
+    color: #2bbc8a;
+}
+
+.mdl-switch.is-checked .mdl-switch__track {
+    background: rgba(43,188,138,.5);
+}
+.mdl-switch.is-checked .mdl-switch__thumb {
+    background: #2bbc8a;
+}
+#location1+label,
+#location2+label,
+#destFolder+label,
+#srcFolder+label{
+    direction:rtl;
+    text-overflow: ellipsis;
+}
+
+#location1, #location2{
+    direction:rtl;
+    text-overflow: ellipsis
+}
+
+.flex-item{
+    overflow: visible;
+    min-width: 20%;
+}
